@@ -6,7 +6,7 @@ from loggers.logger import get_logger
 
 
 class HttpsReader:
-    def __init__(self, reader_config):
+    def __init__(self, reader_config: dict):
         self.logger = get_logger(self.__class__.__name__)
         self.reader_config = reader_config
         self.api_key = self.reader_config["API_KEY"]
