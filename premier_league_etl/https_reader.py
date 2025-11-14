@@ -1,11 +1,10 @@
 import ssl
 import json
 import http.client
-from urllib.parse import urlencode
 from loggers.logger import get_logger
 
 
-class HttpsReader:
+class HTTPSReader:
     def __init__(self, reader_config: dict):
         self.logger = get_logger(self.__class__.__name__)
         self.reader_config = reader_config
@@ -29,11 +28,11 @@ class HttpsReader:
 
     def read(self):
         if not self.connection:
-            self.connection = self.connect()
+           self.connect()
         
         try:
             if self.params:
-                self.endpoint = f"{self.endpoint}?{urlencode(self.params)}"
+                self.endpoint = f"{self.endpoint}?{self.params}"
 
             self.connection.request(self.method, self.endpoint, headers=self.headers)
             response = self.connection.getresponse()

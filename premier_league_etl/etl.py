@@ -20,7 +20,7 @@ class ETLPipeline:
             msg = self.transformation.transform(msg)
             if msg is None:
                 return
-            
+
             self.writer.write(msg)
         except Exception as e:
             self.logger.info(f"FAIL: Error in ETL pipeline: {e}")

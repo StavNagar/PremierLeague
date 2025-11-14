@@ -1,0 +1,59 @@
+# For Standings retrival - Once in a hour
+
+reader:
+  API_KEY: 95df587161b4beedc7f04cfd0a4b0970
+  HOST: v3.football.api-sports.io
+  HEADERS:
+    x-apisports-key: 95df587161b4beedc7f04cfd0a4b0970
+  ENDPOINT: /standings
+  METHOD: GET
+  PARAMS: league=39&season=2022
+
+transformation:
+  EXTENTION: response.0.league.standings
+  CONFIG:
+    team_name:
+      - team.name
+      - str
+    team_id:
+      - team.id
+      - int
+    points:
+      - points
+      - int
+    rank:
+      - rank
+      - int
+    played:
+      - all.played
+      - int
+    wins:
+      - all.win
+      - int
+    draws:
+      - all.draw
+      - int
+    losses:
+      - all.lose
+      - int
+    goals_for:
+      - all.goals.for
+      - int
+    goals_against:
+      - all.goals.against
+      - int
+    goal_difference:
+      - goalsDiff
+      - int
+    form:
+      - form
+      - str
+    update_timestamp:
+      - update
+      - str
+
+writer:
+  PROJECT_ID: civic-genre-462414-s8
+  TARGET_TABLE: FootballData.api-sports
+  STAGING_TABLE: FootballData.api-sports-staging
+  UNIQUE_KEY: team_id

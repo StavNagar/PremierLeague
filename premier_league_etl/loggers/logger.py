@@ -1,6 +1,10 @@
 import os
+import sys
 import logging
 from loggers.logger_formatter import get_formatter
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 def get_logger(name: str, log_file: str="app.log"):
     logger = logging.getLogger(name)

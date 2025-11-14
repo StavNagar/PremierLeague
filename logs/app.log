@@ -1,0 +1,93 @@
+2025-11-13 20:58:01 [INFO] ETLPipeline: FAIL: Error in ETL pipeline: 'HTTPSReader' object is not iterable
+2025-11-14 09:05:27 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 09:05:27 [ERROR] HTTPSReader: FAIL: Failed consume message -> not a valid non-string sequence or mapping object
+2025-11-14 09:06:44 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 09:09:34 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 09:09:34 [ERROR] HTTPSReader: FAIL: Failed consume message -> 'NoneType' object has no attribute 'request'
+2025-11-14 09:11:09 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 09:15:02 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 09:15:05 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 09:22:20 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 09:22:24 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 10:34:55 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 10:34:55 [ERROR] HTTPSReader: FAIL: Failed consume message -> [Errno 11001] getaddrinfo failed
+2025-11-14 10:35:34 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 10:36:48 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 10:36:59 [ERROR] HTTPSReader: FAIL: Failed consume message -> [Errno 11001] getaddrinfo failed
+2025-11-14 10:40:53 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 10:40:56 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 10:48:02 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 10:48:04 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 10:54:21 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 10:54:37 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 10:54:58 [INFO] ETLPipeline: FAIL: Error in ETL pipeline: 'dict' object has no attribute 'split'
+2025-11-14 10:59:02 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 10:59:04 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:00:30 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 11:02:00 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 11:02:02 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:09:49 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 11:09:51 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:10:16 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 11:13:58 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 11:14:00 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:14:09 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 11:23:11 [ERROR] HTTPSReader: FAIL: Connection failed -> nonnumeric port: '//apiv3.apifootball.com'
+2025-11-14 11:23:34 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 11:23:34 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:23:46 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 11:26:12 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:26:13 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:26:16 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 11:27:17 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:27:17 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:31:05 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:31:05 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:32:27 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 11:36:31 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:36:32 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:45:56 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:45:56 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:46:22 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:46:22 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:52:48 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:52:48 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:52:57 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 11:53:17 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:53:17 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:54:36 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:54:36 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:55:34 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:55:34 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:56:57 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:56:57 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:57:45 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:57:46 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 11:57:56 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 11:57:56 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:00:05 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 12:00:05 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:01:26 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 12:01:26 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:01:32 [WARNING] Transformation: Fail: Failed to cast value {'rank': 1, 'team': {'id': 50, 'name': 'Manchester City', 'logo': 'https://media.api-sports.io/football/teams/50.png'}, 'points': 89, 'goalsDiff': 61, 'group': 'Premier League', 'form': 'LDWWW', 'status': 'same', 'description': 'Promotion - Champions League (Group Stage: )', 'all': {'played': 38, 'win': 28, 'draw': 5, 'lose': 5, 'goals': {'for': 94, 'against': 33}}, 'home': {'played': 19, 'win': 17, 'draw': 1, 'lose': 1, 'goals': {'for': 60, 'against': 17}}, 'away': {'played': 19, 'win': 11, 'draw': 4, 'lose': 4, 'goals': {'for': 34, 'against': 16}}, 'update': '2023-05-28T00:00:00+00:00'} to <class 'int'>, setting None
+2025-11-14 12:01:32 [WARNING] Transformation: Fail: Failed to cast value {'rank': 1, 'team': {'id': 50, 'name': 'Manchester City', 'logo': 'https://media.api-sports.io/football/teams/50.png'}, 'points': 89, 'goalsDiff': 61, 'group': 'Premier League', 'form': 'LDWWW', 'status': 'same', 'description': 'Promotion - Champions League (Group Stage: )', 'all': {'played': 38, 'win': 28, 'draw': 5, 'lose': 5, 'goals': {'for': 94, 'against': 33}}, 'home': {'played': 19, 'win': 17, 'draw': 1, 'lose': 1, 'goals': {'for': 60, 'against': 17}}, 'away': {'played': 19, 'win': 11, 'draw': 4, 'lose': 4, 'goals': {'for': 34, 'against': 16}}, 'update': '2023-05-28T00:00:00+00:00'} to <class 'int'>, setting None
+2025-11-14 12:01:32 [WARNING] Transformation: Fail: Failed to cast value {'rank': 1, 'team': {'id': 50, 'name': 'Manchester City', 'logo': 'https://media.api-sports.io/football/teams/50.png'}, 'points': 89, 'goalsDiff': 61, 'group': 'Premier League', 'form': 'LDWWW', 'status': 'same', 'description': 'Promotion - Champions League (Group Stage: )', 'all': {'played': 38, 'win': 28, 'draw': 5, 'lose': 5, 'goals': {'for': 94, 'against': 33}}, 'home': {'played': 19, 'win': 17, 'draw': 1, 'lose': 1, 'goals': {'for': 60, 'against': 17}}, 'away': {'played': 19, 'win': 11, 'draw': 4, 'lose': 4, 'goals': {'for': 34, 'against': 16}}, 'update': '2023-05-28T00:00:00+00:00'} to <class 'int'>, setting None
+2025-11-14 12:01:32 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 12:02:12 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 12:02:12 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:08:14 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 12:08:14 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:08:19 [WARNING] Transformation: Fail: Failed to cast value {'rank': 1, 'team': {'id': 50, 'name': 'Manchester City', 'logo': 'https://media.api-sports.io/football/teams/50.png'}, 'points': 89, 'goalsDiff': 61, 'group': 'Premier League', 'form': 'LDWWW', 'status': 'same', 'description': 'Promotion - Champions League (Group Stage: )', 'all': {'played': 38, 'win': 28, 'draw': 5, 'lose': 5, 'goals': {'for': 94, 'against': 33}}, 'home': {'played': 19, 'win': 17, 'draw': 1, 'lose': 1, 'goals': {'for': 60, 'against': 17}}, 'away': {'played': 19, 'win': 11, 'draw': 4, 'lose': 4, 'goals': {'for': 34, 'against': 16}}, 'update': '2023-05-28T00:00:00+00:00'} to <class 'int'>, setting None
+2025-11-14 12:08:19 [WARNING] Transformation: Fail: Failed to cast value {'rank': 1, 'team': {'id': 50, 'name': 'Manchester City', 'logo': 'https://media.api-sports.io/football/teams/50.png'}, 'points': 89, 'goalsDiff': 61, 'group': 'Premier League', 'form': 'LDWWW', 'status': 'same', 'description': 'Promotion - Champions League (Group Stage: )', 'all': {'played': 38, 'win': 28, 'draw': 5, 'lose': 5, 'goals': {'for': 94, 'against': 33}}, 'home': {'played': 19, 'win': 17, 'draw': 1, 'lose': 1, 'goals': {'for': 60, 'against': 17}}, 'away': {'played': 19, 'win': 11, 'draw': 4, 'lose': 4, 'goals': {'for': 34, 'against': 16}}, 'update': '2023-05-28T00:00:00+00:00'} to <class 'int'>, setting None
+2025-11-14 12:08:19 [WARNING] Transformation: Fail: Failed to cast value {'rank': 1, 'team': {'id': 50, 'name': 'Manchester City', 'logo': 'https://media.api-sports.io/football/teams/50.png'}, 'points': 89, 'goalsDiff': 61, 'group': 'Premier League', 'form': 'LDWWW', 'status': 'same', 'description': 'Promotion - Champions League (Group Stage: )', 'all': {'played': 38, 'win': 28, 'draw': 5, 'lose': 5, 'goals': {'for': 94, 'against': 33}}, 'home': {'played': 19, 'win': 17, 'draw': 1, 'lose': 1, 'goals': {'for': 60, 'against': 17}}, 'away': {'played': 19, 'win': 11, 'draw': 4, 'lose': 4, 'goals': {'for': 34, 'against': 16}}, 'update': '2023-05-28T00:00:00+00:00'} to <class 'int'>, setting None
+2025-11-14 12:08:19 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 12:08:44 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 12:08:44 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:13:26 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 12:13:28 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:14:24 [INFO] HTTPSReader: SUCCESS: Connected to v3.football.api-sports.io
+2025-11-14 12:14:24 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:15:21 [INFO] Transformation: SUCCESS: Success transform data
+2025-11-14 12:16:49 [INFO] HTTPSReader: SUCCESS: Connected to apiv3.apifootball.com
+2025-11-14 12:16:52 [INFO] HTTPSReader: SUCCESS: Message successfully loaded
+2025-11-14 12:16:56 [INFO] Transformation: SUCCESS: Success transform data

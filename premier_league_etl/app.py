@@ -1,4 +1,4 @@
-from premier_league_etl.loggers.logger import get_logger
+from loggers.logger import get_logger
 
 
 class App:
