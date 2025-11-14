@@ -1,0 +1,38 @@
+# For Team retrival - Once in a day
+
+reader:
+  API_KEY: 95df587161b4beedc7f04cfd0a4b0970
+  HOST: v3.football.api-sports.io
+  HEADERS:
+    x-apisports-key: 95df587161b4beedc7f04cfd0a4b0970
+  ENDPOINT: /teams
+  METHOD: GET
+  PARAMS: league=39&season=2022
+
+transformation:
+  EXTENTION: response
+  CONFIG:
+    team_id:
+      - team.id
+      - int
+    team_name:
+      - team.name
+      - str
+    founded_year:
+      - team.founded
+      - int
+    stadium_name:
+      - venue.name
+      - str
+    stadium_city:
+      - venue.city
+      - str
+    stadium_capacity:
+      - venue.capacity
+      - int
+
+writer:
+  PROJECT_ID: civic-genre-462414-s8
+  TARGET_TABLE: FootballData.api-sports
+  STAGING_TABLE: FootballData.api-sports-staging
+  UNIQUE_KEY: team_id

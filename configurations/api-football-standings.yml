@@ -1,0 +1,53 @@
+# For Standings retrival - Once in a hour
+
+reader:
+  API_KEY: dcba2477f46e66225a0a6113937cc0a9841dd26f24aed3fb33c06fd829088534
+  HOST: apiv3.apifootball.com
+  ENDPOINT: /
+  METHOD: GET
+  PARAMS: action=get_standings&league_id=39&APIkey=dcba2477f46e66225a0a6113937cc0a9841dd26f24aed3fb33c06fd829088534
+
+transformation:
+  CONFIG:
+    team_country:
+      - country_name
+      - str
+    team_id:
+      - team_id
+      - int
+    team_name:
+      - team_name
+      - str
+    rank:
+      - overall_league_position
+      - int
+    played:
+      - overall_league_payed
+      - int
+    wins:
+      - overall_league_W
+      - int
+    draws:
+      - overall_league_D
+      - int
+    losses:
+      - overall_league_L
+      - int
+    goals_for:
+      - overall_league_GF
+      - int
+    goals_against:
+      - overall_league_GA
+      - int
+    points:
+      - overall_league_PTS
+      - int
+    promotion_status:
+      - overall_promotion
+      - str
+
+writer:
+  PROJECT_ID: civic-genre-462414-s8
+  TARGET_TABLE: FootballData.api-football
+  STAGING_TABLE: FootballData.api-football-staging
+  UNIQUE_KEY: team_id

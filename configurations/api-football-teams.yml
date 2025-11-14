@@ -1,0 +1,41 @@
+# For Team retrival - Once in a day
+
+reader:
+  API_KEY: dcba2477f46e66225a0a6113937cc0a9841dd26f24aed3fb33c06fd829088534
+  HOST: apiv3.apifootball.com
+  ENDPOINT: /
+  METHOD: GET
+  PARAMS: action=get_teams&league_id=39&APIkey=dcba2477f46e66225a0a6113937cc0a9841dd26f24aed3fb33c06fd829088534
+
+transformation:
+  CONFIG:
+    team_id:
+      - team_key
+      - int
+    team_name:
+      - team_name
+      - str
+    team_country:
+      - team_country
+      - str
+    founded_year:
+      - team_founded
+      - int
+    stadium_name:
+      - venue.venue_name
+      - str
+    stadium_address:
+      - venue.venue_address
+      - str
+    stadium_city:
+      - venue.venue_city
+      - str
+    stadium_capacity:
+      - venue.venue_capacity
+      - int
+
+writer:
+  PROJECT_ID: civic-genre-462414-s8
+  TARGET_TABLE: FootballData.api-football
+  STAGING_TABLE: FootballData.api-football-staging
+  UNIQUE_KEY: team_id
