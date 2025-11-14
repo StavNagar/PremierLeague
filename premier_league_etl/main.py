@@ -1,40 +1,36 @@
-import os
-from config import Config
-from app import App
-from etl import ETLPipeline
-from https_reader import HTTPSReader
-from parser import Parser
-from transformation import Transformation
-from bigquery_writer import BigQueryWriter
+from flask import Flask
+from runner import run_pipeline
+
+app = Flask(__name__)
 
 
-def run_pipeline(config_file_name):
-    config = Config(config_file_name).load_config()
-    App(
-        HTTPSReader(config["reader"]),
-        ETLPipeline(
-            Parser(),
-            Transformation(config["transformation"]),
-            BigQueryWriter(config["writer"])
-        )
-    ).up()
-
-
-def etl_entrypoint(request):
-    request_json = request.get_json(silent=True) if request else None
-
-    config_file_name = None
-
-    if request_json and "ETL_CONFIG_NAME" in request_json:
-        config_file_name = request_json["ETL_CONFIG_NAME"]
-
-    if not config_file_name:
-        config_file_name = os.getenv("ETL_CONFIG_NAME")
+@app.route("/api-sports-teams-pipeline", methods=["GET"])
+def api_sports_team_pipeline():
+    run_pipeline(config_file_name="api-sports-teams.yml")
     
-    if not config_file_name:
-        return (
-            "ERROR: No pipeline specified",
-            400
-        )
+    return "Pipeline named 'api-sports-teams completed", 200
 
-    run_pipeline(config_file_name)
+
+@app.route("/api-sports-standings-pipeline", methods=["GET"])
+def api_sports_team_pipeline():
+    run_pipeline(config_file_name="api-sports-standings.yml")
+
+    return "Pipeline named 'api-sports-standings completed", 200
+
+
+@app.route("/api-football-teams-pipeline", methods=["GET"])
+def api_sports_team_pipeline():
+    run_pipeline(config_file_name="api-football-teams.yml")
+
+    return "Pipeline named 'api-football-teams completed", 200
+
+
+@app.route("/api-football-standings-pipeline", methods=["GET"])
+def api_sports_team_pipeline():
+    run_pipeline(config_file_name="api-football-standings.yml")
+
+    return "Pipeline named 'api-football-standings completed", 200
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
