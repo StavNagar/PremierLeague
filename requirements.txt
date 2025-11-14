@@ -1,0 +1,4 @@
+google-cloud-bigquery==3.10.0
+pandas==1.5.3
+PyYaml
+requests
