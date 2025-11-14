@@ -1,3 +1,4 @@
+import os
 from config import Config
 from app import App
 from etl import ETLPipeline
@@ -7,8 +8,7 @@ from transformation import Transformation
 from bigquery_writer import BigQueryWriter
 
 
-
-def main(config_file_name):
+def run_pipeline(config_file_name):
     config = Config(config_file_name).load_config()
     App(
         HTTPSReader(config["reader"]),
@@ -19,5 +19,22 @@ def main(config_file_name):
         )
     ).up()
 
-if __name__ == "__main__":
-    main("configurations/api-football-teams.yml")
+
+def etl_entrypoint(request):
+    request_json = request.get_json(silent=True) if request else None
+
+    config_file_name = None
+
+    if request_json and "ETL_CONFIG_NAME" in request_json:
+        config_file_name = request_json["ETL_CONFIG_NAME"]
+
+    if not config_file_name:
+        config_file_name = os.getenv("ETL_CONFIG_NAME")
+    
+    if not config_file_name:
+        return (
+            "ERROR: No pipeline specified",
+            400
+        )
+
+    run_pipeline(config_file_name)
